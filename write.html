@@ -12,39 +12,12 @@
     <input type="submit" />
    </form>
   
-  function formCheck() {
-  alert(document.forms[0].title.value);   
-  }
-  
-function formCheck() {
-    var title = document.forms[0].title.value;     
-    var writer = document.forms[0].writer.value;
-    var regdate = document.forms[0].regdate.value;
-    var content = document.forms[0].content.value;      
-    if (title == null || title == ""){      
-        alert('제목을 입력하세요');          
-        document.forms[0].title.focus();    
-        return false;                       
-    }
-    if (writer == null ||  writer  == ""){   
-        alert('작성자를 입력하세요'); 
-        document.forms[0].writer.focus();            
-        return false;               
-    }
-   
-     
-    if (content == null ||  content == ""){
-        alert('내용을 입력하세요'); 
-        document.forms[0].content.focus();
-        return false;
-    }
-     
-    if (regdate == null || regdate == "" ){
-        alert('날짜를 입력하세요');   
-        document.forms[0].regdate.focus();
-        return false;            
-    }
-}
+  <script>
+
+alert(document.forms[0].title.name);
+
+</script>
+
 
   
  </body>
